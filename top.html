@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" style="text-align: center">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&display=swap" rel="stylesheet" />
+    <title>Upgrade Website Ini!</title>
+
+    <style>
+      body {
+        background: white;
+        color: black;
+      }
+
+      .hidden {
+        display: none;
+      }
+
+      /* content */
+
+      .title {
+        font-family: "Fredoka", sans-serif;
+      }
+
+      /* package */
+
+      .select-package {
+        margin-top: 3pc;
+      }
+
+      .pack1 {
+        margin: auto;
+        margin-left: 20pc;
+        width: 20pc;
+      }
+
+      .pack2 {
+        margin: auto;
+        margin-right: 20pc;
+        margin-top: -10.6pc;
+        width: 20pc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Upgrade this Website!</h1>
+    <hr width="200" />
+    <div class="select-package">
+      <div class="pack1" id="real-pack">
+        <h1 class="pack-name">Dasar</h1>
+        <div class="price">
+          <p class="dp">Bisa mengupgrade website sesuka hati. Setelah membeli paket ini, ketika kamu ingin mengupgrade website tak perlu membayar lagi.</p>
+        </div>
+        <button class="btn-purch" onclick="purchase()"><i class="bi bi-coin"></i> Rp 100.000/Bulan</button>
+      </div>
+      <div class="pack2" id="real-pack1">
+        <h1 class="pack-name">Standar</h1>
+        <div class="price">
+          <p class="dp">Sama aja cuman lebih mahal.</p>
+        </div>
+        <button class="btn-purch" onclick="prank_purch()"><i class="bi bi-coin"></i> Rp 50.000/Bulan</button>
+      </div>
+
+      <!-- prank -->
+
+      <div id="prank-pack" class="prank hidden">
+        <h2 class="pack-name">Standar</h2>
+        <div class="price">
+          <p class="dp">Di bilangin lebih mahal.</p>
+        </div>
+        <button class="btn-purch" onclick="prank_purch1()"><i class="bi bi-coin"></i> Rp 500.000,00/Bulan</button>
+      </div>
+    </div>
+
+    <script>
+      function prank_purch() {
+        document.getElementById("prank-pack").style.display = "block";
+        document.getElementById("real-pack").style.display = "none";
+        document.getElementById("real-pack1").style.display = "none";
+      }
+
+      function purchase() {
+        alert("Pembayaran Sukses!");
+        document.location.href = "upgr.html";
+      }
+
+      function prank_purch1() {
+        alert("Pembayaran Sukses!");
+        document.location.href = "upgr.html";
+      }
+    </script>
+  </body>
+</html>

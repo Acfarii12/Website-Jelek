@@ -1,0 +1,174 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to top, rgba(235, 235, 235, 1), rgba(0, 0, 0, 0));
+}
+
+/* navbar */
+
+.navbar {
+  background: #1b1b1b;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  height: 45px;
+}
+
+.navbar-brand {
+  margin-top: -10px;
+  margin-left: 20px;
+}
+
+.navbar-brand .link {
+  font-family: "Montserrat", sans-serif;
+  color: #c5c5c5;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.navbar-link {
+  margin-top: -25px;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.navbar-link .link {
+  color: #c5c5c5;
+  font-family: "Quicksand", sans-serif;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.btn-theme {
+  background: transparent;
+  height: 25px;
+  width: 5pc;
+  border-radius: 5px;
+  border: none;
+  color: #c5c5c5;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+}
+
+.btn-theme:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+/* universe 2nd */
+
+.btn-theme2 {
+  background: transparent;
+  height: 25px;
+  width: 5pc;
+  border-radius: 5px;
+  border: none;
+  color: #c5c5c5;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+}
+
+.btn-theme2:hover {
+  background: #131313;
+}
+
+/* content */
+
+.content {
+  margin-top: 20px;
+}
+
+/* say welcome */
+
+.say-welcome {
+  background: #e5e5e5;
+  width: 50%;
+  height: 150px;
+  margin: auto;
+  margin-top: 60px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+.title-web {
+  font-family: "Fredoka", sans-serif;
+}
+
+.hack {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 20px;
+}
+
+.btn-upgrade {
+  margin-top: 15px;
+  background: #9b0000;
+  cursor: pointer;
+  color: #c5c5c5;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 20pc;
+}
+
+.btn-upgrade:hover {
+  background: #6b0000;
+  color: white;
+}
+
+/* about */
+
+.about {
+  margin: auto;
+  margin-top: 100px;
+  width: 50%;
+  text-align: center;
+}
+
+.about .title {
+  font-family: "Lato", sans-serif;
+}
+
+.about .bar {
+  margin: auto;
+  margin-top: 20px;
+  width: 20%;
+}
+
+.deskripsi {
+  margin-top: 20px;
+}
+
+.des {
+  text-align: left;
+  font-family: "Encode Sans", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* darkmode */
+
+#darkmode {
+  background: #2b2b2b;
+  color: white;
+}
+
+#darkmode .say-welcome {
+  background: #3b3b3b;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" style="text-align: center">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
+    <title>Website Jel3|<</title>
+
+    <style>
+      body {
+        background: white;
+        color: black;
+      }
+
+      .title-web {
+        font-family: Roboto;
+      }
+
+      .info {
+        font-family: Roboto;
+      }
+
+      .creator {
+        font-family: Roboto;
+      }
+
+      .alert-to-upgrade {
+        font-family: Roboto;
+      }
+
+      .btn-upgrade {
+        background: red;
+        color: white;
+        cursor: pointer;
+        height: 40px;
+        width: 20pc;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="title-web">Selamat Datang di Website Jel3|<</h1>
+    <p class="info">Di buat 28 Februari 2022. Info yang sangat tidak penting.</p>
+    <p class="creator">Pembuat: <a href="https://instagram.com/acfarii12._">Acfarii</a> A.K.A. Mysterio</p>
+    <p class="alert-to-upgrade"><i class="bi bi-chevron-double-down"></i> Tekan tombol di bawah untuk membuat website lebih bagus <i class="bi bi-chevron-double-down"></i></p>
+    <button type="submit" class="btn-upgrade" onclick="upgrade()">Perbagus Website!</button>
+
+    <script>
+      function upgrade() {
+        const yakin = confirm("Yakin mau upgrade lagi?");
+        if (yakin) {
+          document.location.href = "upg.html";
+        } else {
+          alert("Terima kasih sudah berkunjung!");
+          document.location.href = "index.html";
+          alert("Website kamu kembali ke level pertama, atau tampilan pertama");
+        }
+      }
+    </script>
+  </body>
+</html>
