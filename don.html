@@ -13,6 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet" />
     <title>Donasi ke Acfarii</title>
 
     <style>
@@ -27,14 +28,20 @@
       }
 
       .title {
-        font-family: "Fredoka", sans-serif;
+        font-family: "Courier Prime", sans-serif;
+        font-size: 35px;
+        text-shadow: 0 5px 1px rgba(105, 105, 105, 0.5);
+      }
+
+      .tag {
+        margin-top: -25px;
+        font-size: 18px;
+        text-shadow: 0 5px 1px rgba(105, 105, 105, 0.5);
       }
 
       .form {
-        text-align: left;
-        margin: auto;
-        margin-top: 50px;
-        width: 15pc;
+        background: #3b3b3b;
+        width: 50%;
       }
 
       .text-label {
@@ -46,55 +53,53 @@
         margin-top: 10px;
         width: 80%;
       }
+
+      .textarea {
+        background: tomato;
+        width: 20pc;
+      }
     </style>
   </head>
   <body>
-    <h1 class="title">Welcome to FAdonet!</h1>
-    <hr width="250" />
-    <button class="btn-back" onclick="back()"><i class="bi bi-arrow-left-short"></i> Kembali ke Halaman Utama</button>
+    <p class="title">FAdonet</p>
+    <div class="tag">
+      <span>from FAuniverse: Website Jelek</span>
+    </div>
+
     <div class="form">
       <form action="upgr.html" method="post">
-        <label for="username" class="text-label">Masukkan Namamu:</label>
-        <input type="text" name="username" id="username" class="type" required />
+        <label for="nama" class="title-label">Nama Donatur:</label>
+        <input type="text" name="nama" id="nama" class="type" required />
         <br />
-        <label for="nominal" class="text-label">Masukkan Nominal uang:</label>
+        <label for="nominal" class="title-label">Nominal Uang:</label>
         <input type="text" name="nominal" id="nominal" class="type" required />
-        <hr class="bar" />
-        <!-- pilih metode pembayaran -->
-        <center>
-          <select name="" id="">
-            <option value="1">Pilih Metode Pembayaran</option>
-            <option value="2">GoPay</option>
-            <option value="3">OVO</option>
-            <option value="4">ShopeePay</option>
-            <option value="5">BCA</option>
-            <option value="6">BNI</option>
-            <option value="7">BRI</option>
-            <option value="8">Mandiri</option>
-            <option value="9">Permata</option>
-            <option value="10">Alfamart</option>
-            <option value="11">Indomaret</option>
-          </select>
-        </center>
         <br />
-        <center>
-          <button class="btn-donate">Donasi</button>
-        </center>
+        <div class="area">
+          <label for="pesan" class="title-label">Berikan pesan / kata-kata mutiara</label>
+          <textarea type="text" name="pesan" id="pesan" class="area"></textarea>
+        </div>
+        <div class="payment">
+          <h3 class="title-pay">Pilih Metode Pembayaran</h3>
+          <input type="radio" name="payment" id="gopay" class="option-pay" />
+          <label for="gopay" class="in-radio">GoPay</label>
+          <br />
+          <input type="radio" name="payment" id="ovo" class="option-pay" />
+          <label for="ovo" class="in-radio">OVO</label>
+          <br />
+          <input type="radio" name="payment" id="dana" class="option-pay" />
+          <label for="dana" class="in-radio">DANA</label>
+          <br />
+          <input type="radio" name="payment" id="linkaja" class="option-pay" />
+          <label for="linkaja" class="in-radio">LinkAja</label>
+          <br />
+          <input type="radio" name="payment" id="qris" class="option-pay" />
+          <label for="qris" class="in-radio">QRIS</label>
+        </div>
+        <button class="btn-donate" type="submit" name="donate">Donasi</button>
       </form>
     </div>
 
-    <div class="setting">
-      <h4>Tema</h4>
-      <hr width="50" />
-      <button class="btn-theme" onclick="setDarkMode(true)">Tema Gelap</button>
-      <button class="btn-theme" onclick="setDarkMode(false)">Tema Terang</button>
-    </div>
-
     <script>
-      function back() {
-        document.location.href = "upgr.html";
-      }
-
       if (localStorage.getItem("theme") == "dark");
       setDarkMode(true);
 
