@@ -1,0 +1,237 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(206, 206, 206);
+}
+
+.hidden {
+  display: none;
+}
+
+/* navbar */
+
+.navbar {
+  margin-top: -20px;
+  background: #1b1b1b;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  height: 45px;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-brand {
+  margin-top: -10px;
+  margin-left: 20px;
+}
+
+.navbar-brand .link {
+  font-family: "Montserrat", sans-serif;
+  color: #c5c5c5;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+.link:hover {
+  color: white;
+}
+
+.navbar-link {
+  margin-top: -25px;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.navbar-link .link {
+  color: #c5c5c5;
+  font-family: "Quicksand", sans-serif;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: white;
+}
+
+.btn-theme {
+  background: transparent;
+  height: 25px;
+  width: 5pc;
+  border-radius: 5px;
+  border: none;
+  color: #c5c5c5;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+}
+
+.btn-theme:hover {
+  color: white;
+}
+
+.des1 {
+  text-align: left;
+  font-family: "Encode Sans", sans-serif;
+  color: #c5c5c5;
+  font-size: 18px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+/* content */
+
+.content {
+  margin-top: 20px;
+}
+
+/* say welcome */
+
+.say-welcome {
+  background-image: url(bahan/seveya-E6GPU4m_2oU-unsplash.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 42pc;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+}
+
+.content-say {
+  text-align: center;
+  margin-top: 12%;
+}
+
+.title-web {
+  font-family: "Fredoka", sans-serif;
+  color: white;
+}
+
+.hack {
+  font-family: "Press Start 2P", sans-serif;
+  font-size: 20px;
+}
+
+.btn-upgrade {
+  margin-top: 30px;
+  background: #9b0000;
+  cursor: pointer;
+  color: #c5c5c5;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 20pc;
+}
+
+.btn-upgrade:hover {
+  background: #6b0000;
+  color: white;
+}
+
+/* about */
+
+.deskripsi {
+  margin: auto;
+  margin-top: 20px;
+  width: 35pc;
+}
+
+.des {
+  text-align: left;
+  font-family: "Encode Sans", sans-serif;
+  color: #c5c5c5;
+  font-size: 18px;
+}
+
+/* post */
+
+.features {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+  padding-top: 5rem;
+}
+
+.post {
+  margin-top: 3pc;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Courier Prime", sans-serif;
+}
+
+.bar {
+  width: 30%;
+  margin: auto;
+}
+
+.info-post {
+  margin-top: -17pc;
+  margin-left: auto;
+  width: 23pc;
+}
+
+.title-post {
+  font-family: "Roboto Slab", sans-serif;
+  font-size: 25px;
+}
+
+.isi {
+  margin-top: 20px;
+  width: 20pc;
+}
+
+.btn-pay {
+  background: #9b0000;
+  width: 10pc;
+  height: 40px;
+  color: lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-pay:hover {
+  background: #6b0000;
+}
+
+/* content */
+
+.c1 {
+  margin-top: 50px;
+}
+
+.c2 {
+  margin-top: 15pc;
+}
+
+.c3 {
+  margin-top: 15pc;
+  margin-bottom: 7pc;
+}
+
+.c3 .info-post {
+  margin-top: -13.5pc;
+}
+
+.c4 .info-post {
+  margin-top: -25pc;
+}
+
+/* darkmode */
+
+#darkmode {
+  background: #202020;
+  color: white;
+}
+
+#darkmode .say-welcome {
+  background: url(bahan/seveya-E6GPU4m_2oU-unsplash.jpg);
+  background-size: cover;
+}
+
+#darkmode .des {
+  color: #c5c5c5;
+}

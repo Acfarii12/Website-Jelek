@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" style="text-align: center">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,89 +12,124 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&display=swap" rel="stylesheet" />
-    <title>Upgrade Website Ini!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet" />
+
+    <title>Subscribe to Improve this Website!</title>
 
     <style>
+      /* style.css */
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
       body {
-        background: white;
+        background: whitesmoke;
+      }
+
+      /* upgrade */
+
+      .upgrade {
+        margin: auto;
+        width: 50%;
+        text-align: center;
+        margin-top: 11pc;
+      }
+
+      .title {
+        font-family: "Encode Sans", sans-serif;
+      }
+
+      .keuntungan {
+        background: rgba(235, 235, 235);
+        border-radius: 5px;
+        box-shadow: 9px 9px 0 rgba(0, 0, 0, 0.5);
+        width: 65%;
+        text-align: left;
+        margin: auto;
+        margin-top: 20px;
+      }
+
+      .title-keun {
+        margin-left: 15px;
+        font-size: 25px;
+        font-family: "Lato", sans-serif;
+      }
+
+      .content {
+        margin-top: 10px;
+        margin-left: 15px;
+      }
+
+      .k1 {
+        color: green;
+        font-size: 18px;
+      }
+
+      .info-ket {
+        margin-left: 10px;
+        font-family: "Quicksand", sans-serif;
+        font-weight: bold;
         color: black;
       }
 
-      .hidden {
-        display: none;
+      .harga {
+        margin-top: 25px;
+        font-family: "Montserrat", sans-serif;
+        font-size: 17px;
       }
 
-      /* content */
-
-      .title {
-        font-family: "Fredoka", sans-serif;
-      }
-
-      /* package */
-
-      .select-package {
-        margin-top: 3pc;
-      }
-
-      .pack1 {
-        margin: auto;
-        margin-left: 20pc;
+      .btn-go {
+        background: #9b0000;
+        margin-top: 20px;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-size: 17px;
+        cursor: pointer;
+        height: 40px;
         width: 20pc;
       }
 
-      .pack2 {
-        margin: auto;
-        margin-right: 20pc;
-        margin-top: -10.6pc;
-        width: 20pc;
+      .btn-go:hover {
+        background: #6b0000;
       }
     </style>
   </head>
   <body>
-    <h1 class="title">Upgrade this Website!</h1>
-    <hr width="200" />
-    <div class="select-package">
-      <div class="pack1" id="real-pack">
-        <h1 class="pack-name">Dasar</h1>
-        <div class="price">
-          <p class="dp">Bisa mengupgrade website sesuka hati. Setelah membeli paket ini, ketika kamu ingin mengupgrade website tak perlu membayar lagi.</p>
+    <!-- Upgrade -->
+    <div class="upgrade">
+      <h1 class="title">Subscribe to Improve this Website!</h1>
+      <div class="keuntungan">
+        <br />
+        <h3 class="title-keun">Keuntungan berlangganan:</h3>
+        <div class="content">
+          <p class="k1"><i class="bi bi-check-circle"></i><span class="info-ket">Upgrade website ini semau mu.</span></p>
+          <p class="k1"><i class="bi bi-check-circle"></i><span class="info-ket">Lihat postingan khusus pelanggan.</span></p>
+          <p class="k1"><i class="bi bi-check-circle"></i><span class="info-ket">Nonton film apapun semaumu (tapi boong).</span></p>
         </div>
-        <button class="btn-purch" onclick="purchase()"><i class="bi bi-coin"></i> Rp 100.000/Bulan</button>
+        <br />
       </div>
-      <div class="pack2" id="real-pack1">
-        <h1 class="pack-name">Standar</h1>
-        <div class="price">
-          <p class="dp">Sama aja cuman lebih mahal.</p>
-        </div>
-        <button class="btn-purch" onclick="prank_purch()"><i class="bi bi-coin"></i> Rp 50.000/Bulan</button>
-      </div>
-
-      <!-- prank -->
-
-      <div id="prank-pack" class="prank hidden">
-        <h2 class="pack-name">Standar</h2>
-        <div class="price">
-          <p class="dp">Di bilangin lebih mahal.</p>
-        </div>
-        <button class="btn-purch" onclick="prank_purch1()"><i class="bi bi-coin"></i> Rp 500.000,00/Bulan</button>
-      </div>
+      <h5 class="harga">Berlangganan dengan harga Rp 130.000,00.</h5>
+      <button class="btn-go" onclick="subscribe()">Mulai Berlangganan!</button>
     </div>
 
     <script>
-      function prank_purch() {
-        document.getElementById("prank-pack").style.display = "block";
-        document.getElementById("real-pack").style.display = "none";
-        document.getElementById("real-pack1").style.display = "none";
-      }
-
-      function purchase() {
-        alert("Pembayaran Sukses!");
-        document.location.href = "upgr.html";
-      }
-
-      function prank_purch1() {
-        alert("Pembayaran Sukses!");
-        document.location.href = "upgr.html";
+      function subscribe() {
+        alert("Sedang di proses....");
+        alert("Jangan takut, ini gratis :)");
+        const lanjut = confirm("Mau lanjut upgrade website ini?");
+        if (lanjut) {
+          document.location.href = "upgr.html";
+        } else {
+          document.location.href = "upg.html";
+          alert("Website kamu kembali ke level sebelumnya, atau tampilan sebelumnya");
+        }
       }
     </script>
   </body>

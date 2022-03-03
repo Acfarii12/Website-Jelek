@@ -15,9 +15,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap" rel="stylesheet" />
 
-    <title>Website 13/\gus FAuniverse</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>FAuniverse: Website 13/\gus</title>
+    <link rel="stylesheet" href="sty.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -26,73 +28,76 @@
         <a href="#" class="link">FAuniverse</a>
       </div>
       <div class="navbar-link g">
-        <a href="" class="link">Beranda</a>
-        <a href="" class="link">Tentang</a>
-        <a href="" class="link">Post</a>
-        <a style="margin-left: 18px">|</a>
-        <button class="btn-theme2" onclick="setDarkMode(true)"><i class="bi bi-moon-stars-fill"></i> Dark</button>
-        <button class="btn-theme2" onclick="setDarkMode(false)"><i class="bi bi-sun-fill"></i> Light</button>
+        <a href="#" class="link">Beranda</a>
+        <a href="#" class="link" onclick="about()">Tentang</a>
+        <a href="#post" class="link">Post</a>
+        <a style="margin-left: 18px" class="l">|</a>
+        <button class="btn-theme" onclick="setDarkMode(true)"><i class="bi bi-moon-stars-fill"></i> Dark</button>
+        <button class="btn-theme" onclick="setDarkMode(false)"><i class="bi bi-sun-fill"></i> Light</button>
       </div>
     </nav>
 
     <div class="content">
+      <br />
       <div class="say-welcome">
         <br />
-        <h1 class="title-web">Selamat Datang di Website <span class="hack">13/\gus</span></h1>
-        <button type="submit" class="btn-upgrade" onclick="upgrade()">Perbagus Website!</button>
-      </div>
-
-      <div class="about" id="about">
-        <h1 class="title">Tentang</h1>
-        <hr class="bar" />
-        <div class="deskripsi">
-          <p class="des">FAuniverse. Website yang baru di buat tanggal 28 Februari 2022. Di buat karena pengembangnya gabut malam-malam pengin beli nasi goreng tapi terlalu ramai akhirnya pulang dan membuat website ini.</p>
+        <div class="content-say">
+          <h1 class="title-web">Selamat Datang di Website <span class="hack">13/\gus</span></h1>
+          <div class="deskripsi" id="d1">
+            <p class="des">FAuniverse. Website yang baru di buat tanggal 28 Februari 2022. Di buat karena pengembangnya gabut malam-malam pengin beli nasi goreng tapi terlalu ramai akhirnya pulang dan membuat website ini.</p>
+          </div>
+          <div class="deskripsi hidden" id="d2">
+            <p class="des1">FAuniverse. Website yang baru di buat tanggal 28 Februari 2022. Di buat karena pengembangnya gabut malam-malam pengin beli nasi goreng tapi terlalu ramai akhirnya pulang dan membuat website ini.</p>
+          </div>
+          <button type="submit" class="btn-upgrade" onclick="upgrade()">Perbagus Website!</button>
         </div>
       </div>
 
-      <div class="features">
-        <div class="content">
-          <div class="c1">
-            <div class="u">
-              <img src="bahan/langit ungu.jpg" alt="Langit Ungu" width="300" />
-              <div class="info-post">
-                <h3>Langitnya Ungu</h3>
-                <p class="isi">Di ambil waktu pagi hari. Terus saya edit di Adobe Lightroom, dan jadilah Langit ungu.</p>
-              </div>
+      <div class="features" id="post">
+        <div class="post">
+          <h1 class="title">Post</h1>
+          <hr class="bar" />
+        </div>
+        <div class="c1">
+          <div class="u">
+            <img src="bahan/langit ungu.jpg" alt="Langit Ungu" width="300" />
+            <div class="info-post">
+              <h3 class="title-post">Langitnya Ungu</h3>
+              <p class="isi">Di ambil waktu pagi hari. Terus saya edit di Adobe Lightroom, dan jadilah Langit ungu.</p>
             </div>
           </div>
-          <div class="c2">
-            <div class="u">
-              <img src="bahan/langitnya bagus.jpg" alt="Langit Ungu" width="300" />
-              <div class="info-post">
-                <h3>Langitnya Bagus</h3>
-                <p class="isi">Di ambil waktu sore hari, Mungkin setelah hujan. Lalu saya edit di lightroom biar lebih bagus di lihatnya :).</p>
-              </div>
+        </div>
+        <div class="c2">
+          <div class="u">
+            <img src="bahan/langitnya bagus.jpg" alt="Langit Bagus" width="300" />
+            <div class="info-post">
+              <h3 class="title-post">Langitnya Bagus</h3>
+              <p class="isi">Di ambil waktu sore hari, Mungkin setelah hujan. Lalu saya edit di lightroom biar lebih bagus di lihatnya :).</p>
             </div>
           </div>
-          <div class="c3">
-            <div class="u">
-              <img src="bahan/asu bonk.jpg" alt="Langit Ungu" width="300" />
-              <div class="info-post">
-                <h3>ASU BONK!</h3>
-                <p class="isi">Foto dari meme yang terkenal. Lalu saya iseng buat edit kembali dan hasilnya seperti itu. Buat foto profil WhatsApp juga gapapa, asalkan bayar dulu 100K.</p>
-                <br />
-                <button class="btn-purchase" onclick="purch()"><i class="bi bi-coin"></i> Rp 100.000</button>
-              </div>
+        </div>
+        <div class="c3">
+          <div class="u">
+            <img src="bahan/asu bonk.jpg" alt="ASU! BONK!" width="300" />
+            <div class="info-post">
+              <h3 class="title-post">ASU BONK!</h3>
+              <p class="isi">Foto dari meme yang terkenal. Lalu saya iseng buat edit kembali dan hasilnya seperti itu. Buat foto profil WhatsApp juga gapapa, asalkan bayar dulu 100K.</p>
+              <br />
+              <button class="btn-pay" onclick="purch()"><i class="bi bi-coin"></i> Rp 100.000</button>
             </div>
           </div>
-          <div class="c4">
-            <div class="u">
-              <video src="bahan/makan angin.mp4" controls width="300"></video>
-              <div class="info-post">
-                <h3>Makan Angin</h3>
-                <p class="isi">
-                  Ya, beginilah. Malam hari makan angin tidak ada nasi (sebenarnya ada di dapur), tidak ada uang, akhirnya saya ambil piring dan sendok lalu makan angin. Minumnya pun air rasa angin. Buat yang mau berdonasi bisa klik tombol
-                  di bawah ini.
-                </p>
-                <br />
-                <button class="btn-donate" onclick="donate()"><i class="bi bi-coin"></i> Donasi</button>
-              </div>
+        </div>
+        <div class="c4">
+          <div class="u">
+            <video src="bahan/makan angin.mp4" controls width="300"></video>
+            <div class="info-post">
+              <h3 class="title-post">Makan Angin</h3>
+              <p class="isi">
+                Ya, beginilah. Malam hari makan angin tidak ada nasi (sebenarnya ada di dapur), tidak ada uang, akhirnya saya ambil piring dan sendok lalu makan angin. Minumnya pun air rasa angin. Buat yang mau berdonasi bisa klik tombol di
+                bawah ini.
+              </p>
+              <br />
+              <button class="btn-pay" onclick="donate()"><i class="bi bi-coin"></i> Donasi</button>
             </div>
           </div>
         </div>
@@ -100,10 +105,15 @@
     </div>
 
     <script>
+      function about() {
+        document.getElementById("d2").style.display = "block";
+        document.getElementById("d1").style.display = "none";
+      }
+
       function upgrade() {
         const yakin = confirm("Yakin mau upgrade lagi?");
         if (yakin) {
-          document.location.href = "upgrad.html";
+          document.location.href = "upgrade.html";
         } else {
           document.location.href = "upgra.html";
           alert("Website kamu kembali ke level sebelumnya, atau tampilan sebelumnya");
@@ -124,11 +134,46 @@
       }
 
       function purch() {
-        alert("Transaksi Berhasil! Silahkan simpan dan gunakan foto ini!");
+        const nama = prompt("Nama Panggilan:");
+        if (nama) {
+          console.log(nama);
+          const purch = confirm("Apakah anda yakin ingin membeli gambar ini?");
+          if (purch) {
+            const pay = prompt("Bayar dengan GoPay, OVO, DANA, atau LinkAja");
+            if (pay) {
+              alert("Sedang diproses...");
+              alert("Padahal gambar itu bisa di screenshot, ngapain harus bayar?");
+              alert("Terima kasih buat 100.000nya " + nama);
+            }
+          } else {
+            alert("Pembayaran di batalkan");
+          }
+        } else {
+          alert("Pembayaran di batalkan");
+        }
       }
 
       function donate() {
-        document.location.href = "don.html";
+        const nama = prompt("Nama Panggilan:");
+        if (nama) {
+          console.log(nama);
+          const nominal = prompt("Masukkan nominal yang ingin kamu donasikan:");
+          if (nominal) {
+            console.log(nominal);
+            const pay = prompt("Bayar dengan GoPay, OVO, DANA, atau LinkAja");
+            if (pay) {
+              alert("Sedang di proses...");
+              alert("Sayangnya itu hanyalah donasi palsu.");
+              alert("Terima kasih uang " + nominal + "nya " + nama);
+            } else {
+              alert("Pembayaran di batalkan");
+            }
+          } else {
+            alert("Pembayaran di batalkan");
+          }
+        } else {
+          alert("Pembayaran di batalkan");
+        }
       }
     </script>
   </body>

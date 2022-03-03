@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&display=swap" rel="stylesheet" />
-    <title>Website _]3|_u$</title>
+    <title>FAuniverse: Website _]3|_u$</title>
 
     <style>
       body {
@@ -72,7 +72,7 @@
     <p class="info">Di buat 28 Februari 2022. Info yang sangat tidak penting.</p>
     <p class="creator">Pembuat: <a href="https://instagram.com/acfarii12._">Acfarii</a> A.K.A. Mysterio</p>
     <p class="alert-to-upgrade"><i class="bi bi-chevron-double-down"></i> Tekan tombol di bawah untuk membuat website lebih bagus <i class="bi bi-chevron-double-down"></i></p>
-    <button type="submit" class="btn-upgrade">Perbagus Website!</button>
+    <button type="submit" class="btn-upgrade" onclick="upgrade()">Perbagus Website!</button>
 
     <div class="features">
       <div class="setting">
@@ -153,11 +153,46 @@
       }
 
       function purch() {
-        alert("Transaksi Berhasil! Silahkan simpan dan gunakan foto ini!");
+        const nama = prompt("Nama Panggilan:");
+        if (nama) {
+          console.log(nama);
+          const purch = confirm("Apakah anda yakin ingin membeli gambar ini?");
+          if (purch) {
+            const pay = prompt("Bayar dengan GoPay, OVO, DANA, atau LinkAja");
+            if (pay) {
+              alert("Sedang diproses...");
+              alert("Padahal gambar itu bisa di screenshot, ngapain harus bayar?");
+              alert("Terima kasih buat 100.000nya " + nama);
+            }
+          } else {
+            alert("Pembayaran di batalkan");
+          }
+        } else {
+          alert("Pembayaran di batalkan");
+        }
       }
 
       function donate() {
-        document.location.href = "don.html";
+        const nama = prompt("Nama Panggilan:");
+        if (nama) {
+          console.log(nama);
+          const nominal = prompt("Masukkan nominal yang ingin kamu donasikan:");
+          if (nominal) {
+            console.log(nominal);
+            const pay = prompt("Bayar dengan GoPay, OVO, DANA, atau LinkAja");
+            if (pay) {
+              alert("Sedang di proses...");
+              alert("Sayangnya itu hanyalah donasi palsu.");
+              alert("Terima kasih uang " + nominal + "nya " + nama);
+            } else {
+              alert("Pembayaran di batalkan");
+            }
+          } else {
+            alert("Pembayaran di batalkan");
+          }
+        } else {
+          alert("Pembayaran di batalkan");
+        }
       }
     </script>
   </body>

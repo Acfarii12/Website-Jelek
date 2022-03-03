@@ -162,6 +162,27 @@ body {
   font-size: 18px;
 }
 
+/* post */
+
+.features {
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.btn-pay {
+  background: #9b0000;
+  width: 10pc;
+  height: 40px;
+  color: lightgray;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-pay:hover {
+  background: #6b0000;
+}
+
 /* darkmode */
 
 #darkmode {

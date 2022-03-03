@@ -16,8 +16,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet" />
 
-    <title>Website _]4GuS FAuniverse</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>FAuniverse: Website _]4GuS</title>
+    <link rel="stylesheet" href="st.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -77,7 +77,7 @@
                 <h3>ASU BONK!</h3>
                 <p class="isi">Foto dari meme yang terkenal. Lalu saya iseng buat edit kembali dan hasilnya seperti itu. Buat foto profil WhatsApp juga gapapa, asalkan bayar dulu 100K.</p>
                 <br />
-                <button class="btn-purchase" onclick="purch()"><i class="bi bi-coin"></i> Rp 100.000</button>
+                <button class="btn-pay" onclick="purch()"><i class="bi bi-coin"></i> Rp 100.000</button>
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@
                   di bawah ini.
                 </p>
                 <br />
-                <button class="btn-donate" onclick="donate()"><i class="bi bi-coin"></i> Donasi</button>
+                <button class="btn-pay" onclick="donate()"><i class="bi bi-coin"></i> Donasi</button>
               </div>
             </div>
           </div>
@@ -124,11 +124,46 @@
       }
 
       function purch() {
-        alert("Transaksi Berhasil! Silahkan simpan dan gunakan foto ini!");
+        const nama = prompt("Nama Panggilan:");
+        if (nama) {
+          console.log(nama);
+          const purch = confirm("Apakah anda yakin ingin membeli gambar ini?");
+          if (purch) {
+            const pay = prompt("Bayar dengan GoPay, OVO, DANA, atau LinkAja");
+            if (pay) {
+              alert("Sedang diproses...");
+              alert("Padahal gambar itu bisa di screenshot, ngapain harus bayar?");
+              alert("Terima kasih buat 100.000nya " + nama);
+            }
+          } else {
+            alert("Pembayaran di batalkan");
+          }
+        } else {
+          alert("Pembayaran di batalkan");
+        }
       }
 
       function donate() {
-        document.location.href = "don.html";
+        const nama = prompt("Nama Panggilan:");
+        if (nama) {
+          console.log(nama);
+          const nominal = prompt("Masukkan nominal yang ingin kamu donasikan:");
+          if (nominal) {
+            console.log(nominal);
+            const pay = prompt("Bayar dengan GoPay, OVO, DANA, atau LinkAja");
+            if (pay) {
+              alert("Sedang di proses...");
+              alert("Sayangnya itu hanyalah donasi palsu.");
+              alert("Terima kasih uang " + nominal + "nya " + nama);
+            } else {
+              alert("Pembayaran di batalkan");
+            }
+          } else {
+            alert("Pembayaran di batalkan");
+          }
+        } else {
+          alert("Pembayaran di batalkan");
+        }
       }
     </script>
   </body>

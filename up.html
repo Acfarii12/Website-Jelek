@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
-    <title>Website Jel3|<</title>
+    <title>FAuniverse: Website Jel3|<</title>
 
     <style>
       body {
@@ -45,6 +45,52 @@
     <p class="alert-to-upgrade"><i class="bi bi-chevron-double-down"></i> Tekan tombol di bawah untuk membuat website lebih bagus <i class="bi bi-chevron-double-down"></i></p>
     <button type="submit" class="btn-upgrade" onclick="upgrade()">Perbagus Website!</button>
 
+    <div class="features" id="post">
+      <div class="c1">
+        <div class="u">
+          <img src="bahan/langit ungu.jpg" alt="Langit Ungu" width="300" />
+          <div class="info-post">
+            <h3 class="title-post">Langitnya Ungu</h3>
+            <p class="isi">Di ambil waktu pagi hari. Terus saya edit di Adobe Lightroom, dan jadilah Langit ungu.</p>
+          </div>
+        </div>
+      </div>
+      <div class="c2">
+        <div class="u">
+          <img src="bahan/langitnya bagus.jpg" alt="Langit Ungu" width="300" />
+          <div class="info-post">
+            <h3 class="title-post">Langitnya Bagus</h3>
+            <p class="isi">Di ambil waktu sore hari, Mungkin setelah hujan. Lalu saya edit di lightroom biar lebih bagus di lihatnya :).</p>
+          </div>
+        </div>
+      </div>
+      <div class="c3">
+        <div class="u">
+          <img src="bahan/asu bonk.jpg" alt="Langit Ungu" width="300" />
+          <div class="info-post">
+            <h3 class="title-post">ASU BONK!</h3>
+            <p class="isi">Foto dari meme yang terkenal. Lalu saya iseng buat edit kembali dan hasilnya seperti itu. Buat foto profil WhatsApp juga gapapa, asalkan bayar dulu 100K.</p>
+            <br />
+            <button class="btn-pay" onclick="purch()"><i class="bi bi-coin"></i> Rp 100.000</button>
+          </div>
+        </div>
+      </div>
+      <div class="c4">
+        <div class="u">
+          <video src="bahan/makan angin.mp4" controls width="300"></video>
+          <div class="info-post">
+            <h3 class="title-post">Makan Angin</h3>
+            <p class="isi">
+              Ya, beginilah. Malam hari makan angin tidak ada nasi (sebenarnya ada di dapur), tidak ada uang, akhirnya saya ambil piring dan sendok lalu makan angin. Minumnya pun air rasa angin. Buat yang mau berdonasi bisa klik tombol di
+              bawah ini.
+            </p>
+            <br />
+            <button class="btn-pay" onclick="donate()"><i class="bi bi-coin"></i> Donasi</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script>
       function upgrade() {
         const yakin = confirm("Yakin mau upgrade lagi?");
@@ -54,6 +100,49 @@
           alert("Terima kasih sudah berkunjung!");
           document.location.href = "index.html";
           alert("Website kamu kembali ke level pertama, atau tampilan pertama");
+        }
+      }
+
+      function purch() {
+        const nama = prompt("Nama Panggilan:");
+        if (nama) {
+          console.log(nama);
+          const purch = confirm("Apakah anda yakin ingin membeli gambar ini?");
+          if (purch) {
+            const pay = prompt("Bayar dengan GoPay, OVO, DANA, atau LinkAja");
+            if (pay) {
+              alert("Sedang diproses...");
+              alert("Padahal gambar itu bisa di screenshot, ngapain harus bayar?");
+              alert("Terima kasih buat 100.000nya " + nama);
+            }
+          } else {
+            alert("Pembayaran di batalkan");
+          }
+        } else {
+          alert("Pembayaran di batalkan");
+        }
+      }
+
+      function donate() {
+        const nama = prompt("Nama Panggilan:");
+        if (nama) {
+          console.log(nama);
+          const nominal = prompt("Masukkan nominal yang ingin kamu donasikan:");
+          if (nominal) {
+            console.log(nominal);
+            const pay = prompt("Bayar dengan GoPay, OVO, DANA, atau LinkAja");
+            if (pay) {
+              alert("Sedang di proses...");
+              alert("Sayangnya itu hanyalah donasi palsu.");
+              alert("Terima kasih uang " + nominal + "nya " + nama);
+            } else {
+              alert("Pembayaran di batalkan");
+            }
+          } else {
+            alert("Pembayaran di batalkan");
+          }
+        } else {
+          alert("Pembayaran di batalkan");
         }
       }
     </script>

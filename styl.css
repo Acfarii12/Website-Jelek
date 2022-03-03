@@ -1,0 +1,293 @@
+/* style.css */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(206, 206, 206);
+  min-height: 2300px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* navbar */
+
+.navbar {
+  margin-top: -20px;
+  background: #1b1b1b;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  height: 45px;
+  position: fixed;
+  width: 100%;
+}
+
+.navbar-brand {
+  margin-top: -10px;
+  margin-left: 20px;
+}
+
+.navbar-brand .link {
+  font-family: "Montserrat", sans-serif;
+  color: #c5c5c5;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+.link:hover {
+  color: white;
+}
+
+.navbar-link {
+  margin-top: -25px;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.navbar-link .link {
+  color: #c5c5c5;
+  font-family: "Quicksand", sans-serif;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.link:hover {
+  color: white;
+}
+
+.a {
+  margin-left: 12px;
+}
+
+.btn-theme {
+  background: transparent;
+  height: 25px;
+  width: 4.5pc;
+  border-radius: 5px;
+  border: none;
+  color: #c5c5c5;
+  cursor: pointer;
+  font-family: "Quicksand", sans-serif;
+  font-size: 15px;
+}
+
+.btn-theme:hover {
+  color: white;
+}
+
+/* universe 2nd */
+
+.des1 {
+  text-align: left;
+  font-family: "Encode Sans", sans-serif;
+  color: #c5c5c5;
+  font-size: 18px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.9);
+}
+
+/* content */
+
+.content {
+  margin-top: 20px;
+}
+
+/* say welcome */
+
+.say-welcome {
+  background-image: url(bahan/seveya-E6GPU4m_2oU-unsplash.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 42pc;
+  box-shadow: 0 11px 9px rgba(0, 0, 0, 0.9);
+}
+
+.say-welcome::after {
+  content: "";
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 5), rgba(0, 0, 0, 0));
+  margin-top: -23pc;
+  width: 100%;
+  height: 42pc;
+  display: block;
+}
+
+.content-say {
+  text-align: center;
+  margin-top: 12%;
+}
+
+.title-web {
+  font-family: "Fredoka", sans-serif;
+  color: white;
+}
+
+.btn-upgrade {
+  margin-top: 30px;
+  background: #9b0000;
+  cursor: pointer;
+  color: #c5c5c5;
+  font-size: 17px;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 20pc;
+}
+
+.btn-upgrade:hover {
+  background: #6b0000;
+  color: white;
+}
+
+/* about */
+
+.deskripsi {
+  margin: auto;
+  margin-top: 20px;
+  width: 35pc;
+}
+
+.des {
+  text-align: left;
+  font-family: "Encode Sans", sans-serif;
+  color: #c5c5c5;
+  font-size: 18px;
+}
+
+/* post */
+
+.features {
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+  padding-top: 5rem;
+}
+
+.post {
+  margin-top: 3pc;
+}
+
+.title {
+  font-size: 40px;
+  font-family: "Inter", sans-serif;
+}
+
+figcaption {
+  margin: auto;
+  width: 17pc;
+  text-align: left;
+  margin-top: 15px;
+}
+
+.title-post {
+  letter-spacing: 0.5px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.isi {
+  font-family: "Roboto", sans-serif;
+  margin-top: 10px;
+}
+
+.btn-pay {
+  background: #9b0000;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  height: 40px;
+  width: 15pc;
+}
+
+.btn-pay:hover {
+  background: #6b0000;
+}
+
+/* content */
+
+.figure {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.figure img {
+  box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+img:hover {
+  box-shadow: 13px 13px 0 rgba(0, 0, 0, 0.5);
+}
+
+.figure video {
+  box-shadow: 7px 7px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+video:hover {
+  box-shadow: 13px 13px 0 rgba(0, 0, 0, 0.5);
+}
+
+.c1 {
+  width: 17.4pc;
+  margin-right: auto;
+}
+
+.c2 {
+  width: 17.4pc;
+  margin: auto;
+  margin-top: -30.1pc;
+}
+
+.c3 {
+  width: 17.4pc;
+  margin-left: auto;
+  margin-top: -31.3pc;
+}
+
+.c4 {
+  width: 17.4pc;
+  margin-right: auto;
+  margin-top: 150px;
+}
+
+.c5 {
+  width: 17.4pc;
+  margin: auto;
+  margin-top: -46.3pc;
+}
+
+.c6 {
+  width: 17.4pc;
+  margin-left: auto;
+  margin-top: -17.5pc;
+}
+
+/* mini games */
+
+.mini-games {
+  width: 70%;
+  margin: auto;
+  margin-top: 20pc;
+  padding-top: 5rem;
+}
+
+/* darkmode */
+
+#darkmode {
+  background: #202020;
+  color: white;
+}
+
+#darkmode .say-welcome {
+  background: url(bahan/seveya-E6GPU4m_2oU-unsplash.jpg);
+  background-size: cover;
+}
+
+#darkmode .des {
+  color: #c5c5c5;
+}
