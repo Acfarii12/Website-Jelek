@@ -118,10 +118,36 @@
       <div class="games">
         <h1 class="title">MINI GAMES</h1>
       </div>
+      <div class="games-area">
+        <div class="the-game">
+          <div class="computer-area">
+            <img src="" class="img-computer" />
+          </div>
+          <div class="info"></div>
+          <div class="player-area">
+            <div class="gunting">
+              <img src="bahan/minigames/gunting.JPG" alt="" class="img-gunting" />
+              <br />
+              <span class="name-tools">Gunting</span>
+            </div>
+            <div class="batu">
+              <img src="bahan/minigames/batu.JPG" alt="" class="img-batu" />
+              <br />
+              <span class="name-tools">Batu</span>
+            </div>
+            <div class="kertas">
+              <img src="bahan/minigames/kertas.JPG" alt="" class="img-kertas" />
+              <br />
+              <span class="name-tools">Kertas</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer></footer>
 
+    <script src="script.js"></script>
     <script>
       function about() {
         document.getElementById("d2").style.display = "block";
@@ -133,8 +159,11 @@
         if (yakin) {
           document.location.href = "upgrade.html";
         } else {
-          document.location.href = "upgra.html";
-          alert("Website kamu kembali ke level sebelumnya, atau tampilan sebelumnya");
+          const backorno = confirm("Apakah kamu ingin kembali ke level sebelumnya?");
+          if (backorno) {
+            alert("Website kamu kembali ke level sebelumnya, atau tampilan sebelumnya");
+            document.location.href = "upgrad.html";
+          }
         }
       }
 

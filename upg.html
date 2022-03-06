@@ -108,17 +108,40 @@
           </div>
         </div>
       </div>
+      <div class="c5">
+        <div class="u">
+          <img src="bahan/setup.jpg" alt="My Setup" width="280" />
+          <div class="info-post">
+            <h3 class="title-post">Setup</h3>
+            <p class="isi"><i>No Caption</i></p>
+          </div>
+        </div>
+      </div>
+      <div class="c6">
+        <div class="u">
+          <img src="bahan/not my home.jpg" alt="Spider-Man: Photoshot Not at my Home" width="280" />
+          <div class="info-post">
+            <h3 class="title-post">Spider-Man: Photoshot Not at my Home</h3>
+            <p class="isi">Ini spider-man, lagi photoshot buat foto rapot. Setelah selesai proses photoshot ia langsung pergi dan bilang terima kasih. Tamat. Di kabarkan filmnya akan tayang sebentar lagi... It will not happen</p>
+          </div>
+        </div>
+      </div>
     </div>
 
     <script>
       function upgrade() {
         const yakin = confirm("Yakin mau upgrade lagi?");
         if (yakin) {
-          alert("Upgrade website ini dengan membayar!");
-          document.location.href = "top.html";
+          const bayar = confirm("Upgrade website dengan membayar?");
+          if (bayar) {
+            document.location.href = "top.html";
+          }
         } else {
-          document.location.href = "up.html";
-          alert("Website kamu kembali ke level sebelumnya, atau tampilan sebelumnya");
+          const backorno = confirm("Apakah kamu ingin kembali ke level sebelumnya?");
+          if (backorno) {
+            alert("Website kamu kembali ke level sebelumnya, atau tampilan sebelumnya");
+            document.location.href = "up.html";
+          }
         }
       }
 
