@@ -19,6 +19,7 @@ body {
 .navbar {
   margin-top: -20px;
   background: #1b1b1b;
+  z-index: 9999;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
   height: 45px;
   position: fixed;
@@ -276,6 +277,39 @@ video:hover {
   padding-top: 5rem;
 }
 
+.info-player-com {
+  font-family: "Maven Pro", sans-serif;
+}
+
+.player {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.computer {
+  text-align: right;
+  margin-right: 20px;
+}
+
+.games-area {
+  margin: auto;
+  margin-top: 4pc;
+  border-radius: 30px;
+  width: 60%;
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.7);
+}
+
+.player-area {
+  background-image: linear-gradient(to bottom, rgb(8, 0, 51), rgb(18, 0, 122));
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  height: 210px;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  margin-top: -2pc;
+}
+
 .player-area img {
   height: 100px;
   border-radius: 100pc;
@@ -287,16 +321,50 @@ img:hover {
   box-shadow: 0 5px 9px rgba(0, 0, 0, 0.9);
 }
 
-/* items */
+/* computer */
 
-.games-area {
-  height: 10pc;
-  width: 60%;
+.computer-area {
+  background-image: linear-gradient(to top, rgb(51, 0, 0, 1), rgb(122, 0, 0, 1));
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  height: 180px;
+  width: 100%;
   margin: auto;
-  background: tomato;
-  border-radius: 30px;
   text-align: center;
 }
+
+.computer-area img {
+  height: 100px;
+  border-radius: 100pc;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+img:hover {
+  box-shadow: 0 5px 9px rgba(0, 0, 0, 0.9);
+}
+
+/* info */
+
+.info {
+  background: #e2e2e2;
+  border: 2px solid rgb(83, 83, 83);
+  height: 50px;
+  z-index: 1;
+  position: relative;
+  width: 30%;
+  margin: auto;
+  border-radius: 10px;
+  margin-top: -1.5pc;
+  text-align: center;
+  line-height: 50px;
+  font-family: "Quicksand", sans-serif;
+  color: #2b2b2b;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* items */
 
 .gunting {
   margin-right: auto;
@@ -318,6 +386,25 @@ img:hover {
 .name-tools {
   font-family: "Fredoka", sans-serif;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+/* footer */
+
+footer {
+  background: #101010;
+  line-height: 70px;
+  height: 70px;
+  width: 100%;
+  text-align: center;
+  margin-top: -20px;
+}
+
+footer p {
+  font-family: "Courier Prime", sans-serif;
+}
+
+footer a {
+  color: gray;
 }
 
 /* darkmode */

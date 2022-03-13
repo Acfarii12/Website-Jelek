@@ -147,7 +147,7 @@ body {
 /* post */
 
 .features {
-  width: 50%;
+  width: 70%;
   margin: auto;
   margin-top: 50px;
   padding-top: 5rem;
@@ -157,6 +157,10 @@ body {
   margin-top: 3pc;
 }
 
+.a {
+  margin-top: 4pc;
+}
+
 .title {
   text-align: center;
   font-size: 40px;
@@ -164,14 +168,9 @@ body {
 }
 
 .bar {
-  width: 30%;
+  width: 15%;
   margin: auto;
-}
-
-.info-post {
-  margin-top: -17pc;
-  margin-left: auto;
-  width: 23pc;
+  margin-top: 20px;
 }
 
 .title-post {
@@ -200,24 +199,57 @@ body {
 /* content */
 
 .c1 {
-  margin-top: 50px;
+  width: 17.4pc;
+  margin-right: auto;
 }
 
 .c2 {
-  margin-top: 15pc;
+  width: 17.4pc;
+  margin: auto;
+  margin-top: -30.8pc;
 }
 
 .c3 {
-  margin-top: 15pc;
-  margin-bottom: 7pc;
+  width: 17.4pc;
+  margin-left: auto;
+  margin-top: -32pc;
 }
 
-.c3 .info-post {
-  margin-top: -13.5pc;
+.c4 {
+  width: 17.4pc;
+  margin-right: auto;
+  margin-top: 150px;
 }
 
-.c4 .info-post {
-  margin-top: -25pc;
+.c5 {
+  width: 17.4pc;
+  margin: auto;
+  margin-top: -47.2pc;
+}
+
+.c6 {
+  width: 17.4pc;
+  margin-left: auto;
+  margin-top: -17.8pc;
+}
+
+/* footer */
+
+footer {
+  background: #101010;
+  line-height: 70px;
+  height: 70px;
+  width: 100%;
+  text-align: center;
+  margin-top: 20pc;
+}
+
+footer p {
+  font-family: "Courier Prime", sans-serif;
+}
+
+footer a {
+  color: gray;
 }
 
 /* darkmode */

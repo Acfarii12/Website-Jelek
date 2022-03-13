@@ -183,6 +183,23 @@ body {
   background: #6b0000;
 }
 
+/* footer */
+
+footer {
+  margin-top: 4pc;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+}
+
+footer p {
+  font-family: "Courier Prime", sans-serif;
+}
+
+footer a {
+  color: gray;
+}
+
 /* darkmode */
 
 #darkmode {
