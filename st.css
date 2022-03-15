@@ -50,7 +50,7 @@ body {
   position: fixed;
   background: #101010;
   text-align: left;
-  margin-top: 175%;
+  margin-top: 173%;
 }
 
 .navbar-bottom .link {
@@ -290,6 +290,7 @@ body {
 /* footer */
 
 footer {
+  display: none;
   margin-top: 4pc;
   height: 50px;
   line-height: 50px;
@@ -492,6 +493,7 @@ footer a {
   /* footer */
 
   footer {
+    display: block;
     margin-top: 4pc;
     height: 50px;
     line-height: 50px;
