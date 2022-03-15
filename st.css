@@ -50,7 +50,7 @@ body {
   position: fixed;
   background: #101010;
   text-align: left;
-  margin-top: 165%;
+  margin-top: 170%;
 }
 
 .navbar-bottom .link {
@@ -190,11 +190,11 @@ body {
 }
 
 .content img {
-  width: 200px;
+  width: 250px;
 }
 
 .content video {
-  width: 200px;
+  width: 250px;
 }
 
 /* say welcome */
