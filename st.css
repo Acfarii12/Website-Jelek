@@ -290,7 +290,6 @@ body {
 /* footer */
 
 footer {
-  display: none;
   margin-top: 4pc;
   height: 50px;
   line-height: 50px;
@@ -493,7 +492,6 @@ footer a {
   /* footer */
 
   footer {
-    display: block;
     margin-top: 4pc;
     height: 50px;
     line-height: 50px;
